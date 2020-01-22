@@ -1,0 +1,80 @@
+.main-section {
+    display: flex;
+
+    .search-content-type-wrapper-div {
+        background-color: @color-light-grey;
+        width           : @width-20;
+        height          : @height-100-px+607;
+
+        .search-content-type {
+            color         : @font-color-grey;
+            font-family   : @roboto;
+            font-size     : @font14;
+            line-height   : @line-height-16;
+            padding-top   : @padding-30+2;
+            padding-left  : @padding-40;
+            text-transform: uppercase;
+
+            .content-type-title {}
+
+            .search-image {
+                padding-left: @padding-9;
+            }
+
+            .list-view {
+
+                .list-view-image {
+                    padding-left: @padding-60+10;
+                    margin-top  : @padding-4;
+                }
+            }
+        }
+
+        .display-all-content-types {
+            background   : @color-white;
+            border-radius: @border-radius-5;
+            box-shadow   : 0px 0.1px 4px rgba(0, 0, 0, 0.06);
+            height       : @height-30-px+4;
+            margin-left  : @margin-10+1;
+            margin-top   : @margin-35+2;
+            width        : @width-100-px+150;
+
+            .content-type-title {
+                position: relative;
+                top     : 22%;
+                left    : 11.4%;
+
+                a {
+                    color      : @color-purple;
+                    font-weight: @semibold ;
+                    font-size  : @font14;
+                    line-height: @line-height-16;
+                }
+            }
+
+        }
+
+        .all-content-types {
+            padding-left: @padding-30+9;
+            padding-top : @padding-10+4;
+
+            .content-type {
+
+                .ct-link {
+                    color        : @light-grey;
+                    cursor       : pointer;
+                    font-family  : @roboto;
+                    font-size    : @font14;
+                    line-height  : @line-height-16;
+                    overflow     : hidden;
+                    text-overflow: ellipsis;
+                    white-space  : nowrap;
+                }
+            }
+
+            .common-spacing-ct {
+                padding-top: @padding-20+2;
+            }
+        }
+    }
+}
