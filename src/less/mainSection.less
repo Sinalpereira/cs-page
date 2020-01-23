@@ -6,6 +6,10 @@
         width           : @width-20;
         height          : @height-100-px+607;
 
+        @media screen and (max-width: 1280px) {
+            width: 21%;
+        }
+
         .search-content-type {
             color         : @font-color-grey;
             font-family   : @roboto;
@@ -22,10 +26,13 @@
             }
 
             .list-view {
-
                 .list-view-image {
                     padding-left: @padding-60+10;
                     margin-top  : @padding-4;
+
+                    @media screen and (max-width: 1280px) {
+                        padding-left: 57px;
+                    }
                 }
             }
         }
@@ -38,6 +45,10 @@
             margin-left  : @margin-10+1;
             margin-top   : @margin-35+2;
             width        : @width-100-px+150;
+
+            @media screen and (max-width: 1280px) {
+                width: 91%;
+            }
 
             .content-type-title {
                 position: relative;

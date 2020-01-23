@@ -60,9 +60,10 @@ class MainSection extends Component {
                                 <a className="adv-btn">Advanced</a>
                             </div>
                             <div className="dropdown-list-language">
-                                <p className="language-selection"> English-United States</p>
+                                <span className="language-selection">English-United States</span>
+                                <span><img src={languageDropDown} alt="dropdown-icon" className="dropdown-for-language"></img></span>
                             </div>
-                            <img src={languageDropDown} alt="dropdown-icon" className="dropdown-for-language"></img>
+
                             <div className="button-for-new-entry">
                                 <button className="entry-button">New Entry</button>
                             </div>
@@ -70,7 +71,7 @@ class MainSection extends Component {
                         <div className="top-header">
                             <div className="filters">
                                 <a className="filter-link">Filters</a></div>
-                            <div className="publish-status">
+                            <div className="publish-status-wrapper">
                                 <a className="ps-link">Publish status</a>
                                 <span><img src={dropdown} alt="dropdown" class="dropdown-list"></img></span></div>
                             <div className="tags">
@@ -86,108 +87,134 @@ class MainSection extends Component {
                         <div className="entry-wrapper">
                             <div className="show-ct">
                                 <ul>
-                                    <li className="row row-heading br-5">
-                                        <div className="row-title padding-20 font-12">
+                                    <li className="row row-heading">
+                                        <div className="row-title w-30 font-12 padding-14">
                                             <span>Title</span></div>
-                                        <div className="row-title row-common paddin-right-20 font-12">Content Type</div>
-                                        <div className="row-title row-common font-12 mr-13 w-34">Modified By
-                                        <span className="modified-by-dropdown font-12"><img src={dropdown} alt="drop-down"></img></span></div>
-                                        <div className="row-title row-common font-12 w-34 padding-left">Publish Status</div>
-                                        <div className="row-title row-common font-12 w-14">
-                                            <img
-                                                src={cascade} alt="cascade"
-                                                className="cascade"
-                                            />
-                                            <span><img src={dropdown} alt="dropdown-icon" className="dropdown-list"></img></span>
+                                        <div className="row-title row-common w-20 ml-20 font-12 padding-14">Content type</div>
+                                        <div className="row-title row-common font-12 w-20 padding-14">Modified by
+                                        <span className="modified-by-dropdown font-12">
+                                                <img src={dropdown} alt="drop-down"></img>
+                                            </span>
+                                        </div>
+                                        <div className="row-title row-common font-12 w-20 padding-14">Publish status</div>
+                                        <div className="row-title row-common font-12 w-20 padding-14">
+                                            <div className="cascade-dropdown-wrapper">
+                                                <img
+                                                    src={cascade} alt="cascade"
+                                                    className="cascade"
+                                                />
+                                                <span><img src={dropdown} alt="dropdown-icon" className="dropdown-list"></img></span>
+                                            </div>
 
                                         </div>
                                     </li>
-                                    <li className="row">
-                                        <div className="row-title padding-20"><a className="link-ct-title">How Content Localization</a></div>
-                                        <div className="row-title paddin-right-20"><a className="ct">Blog</a></div>
-                                        <div className="row-title padding-top-20 mr-13 w-34 lh-27 mr-7">
-                                            Richton Wins
-                    <p class="row-description">Dec 25 2018,02;30 PM</p>
+                                    <li className="row br-5-top">
+                                        <div className="row-title w-30"><a className="link-ct-title">How Content Localization</a></div>
+                                        <div className="row-title w-20 ml-20"><a className="ct">Blog</a></div>
+                                        <div className="row-title w-20">
+                                            <p className="modified-by-name"> Richton Wins</p>
+                                            <p class="row-description">Dec 25 2018,02;30 PM</p>
                                         </div>
-                                        <div class="row-title w-34 padding-left">Not Published</div>
-                                        <div class="row-title w-14"></div>
+                                        <div class="row-title w-20">
+                                            <p>Not Published</p>
+                                            {/* <ul >
+                                                <li className="publish-status">
+                                                    Not Published
+                                                </li>
+                                            </ul> */}
+                                        </div>
+                                        <div class="row-title w-20"></div>
                                     </li>
                                     <li class="row">
-                                        <div class="row-title padding-20"><a className="link-ct-title">6 Technologies to Transform</a></div>
-                                        <div class="row-title paddin-right-20">Blog</div>
-                                        <div class="row-title padding-top-20 mr-13 w-34 lh-27 mr-7">
-                                            Richton Wins
-                    <p class="row-description ">Dec 25 2018,02;30 PM</p>
+                                        <div class="row-title w-30"><a className="link-ct-title">6 Technologies to Transform</a></div>
+                                        <div class="row-title w-20 ml-20">Blog</div>
+                                        <div class="row-title w-20">
+                                            <p className="modified-by-name"> Richton Wins</p>
+                                            <p class="row-description ">Dec 25 2018,02;30 PM</p>
                                         </div>
-                                        <div class="row-title w-34 padding-left lh-27"><ul>
-                                            <li className="staging">Staging</li>
-                                            <li className="production">Production</li>
-                                        </ul>
+                                        <div class="row-title w-20">
+                                            <ul>
+                                                <li className="staging color-green">Staging</li>
+                                                <li className="production color-blue">Production</li>
+                                            </ul>
                                         </div>
-                                        <div className="row-title w-14"></div>
+                                        <div className="row-title w-20"></div>
                                     </li>
                                     <li className="row">
-                                        <div className="row-title padding-20"><a className="link-ct-title">The Markers guide</a></div>
-                                        <div className="row-title paddin-right-20">Blog</div>
-                                        <div className="row-title padding-top-20 mr-13 w-34 lh-27 mr-7">
-                                            Richton Wins
-                    <p className="row-description ">Dec 25 2018,02;30 PM</p>
+                                        <div className="row-title w-30"><a className="link-ct-title">The Markers guide</a></div>
+                                        <div className="row-title w-20 ml-20">Blog</div>
+                                        <div className="row-title w-20">
+                                            <p className="modified-by-name"> Richton Wins</p>
+                                            <p className="row-description ">Dec 25 2018,02;30 PM</p>
                                         </div>
-                                        <div className="row-title w-34 padding-left"><ul>
-                                            <li className="staging mt-10">Staging</li>
-                                        </ul>
+                                        <div className="row-title w-20">
+                                            <ul>
+                                                <li className="publish-status color-green">Staging</li>
+                                            </ul>
                                         </div>
-                                        <div className="row-title w-14"></div>
+                                        <div className="row-title w-20"></div>
                                     </li>
                                     <li className="row">
-                                        <div className="row-title padding-20"><a className="link-ct-title">Create Reusable Fields</a></div>
-                                        <div className="row-title paddin-right-20">Blog</div>
-                                        <div className="row-title padding-top-20 mr-13 w-34 lh-27 mr-7">
-                                            Richton Wins
-                    <p className="row-description ">Dec 25 2018,02;30 PM</p>
+                                        <div className="row-title w-30"><a className="link-ct-title">Create Reusable Fields</a></div>
+                                        <div className="row-title w-20 ml-20">Blog</div>
+                                        <div className="row-title w-20">
+                                            <p className="modified-by-name"> Richton Wins</p>
+                                            <p className="row-description ">Dec 25 2018,02;30 PM</p>
                                         </div>
-                                        <div className="row-title w-34 padding-left lh-27"><ul>
-                                            <li className="staging">Staging</li>
-                                            <li className="production">Production</li>
+                                        <div className="row-title w-20"><ul>
+                                            <li className="staging color-green">Staging</li>
+                                            <li className="production color-blue">Production</li>
                                         </ul>
                                         </div>
-                                        <div className="row-title w-14"></div>
+                                        <div className="row-title w-20"></div>
                                     </li>
                                     <li className="row">
-                                        <div className="row-title padding-20"><a className="link-ct-title">How Marketing will be transformed</a></div>
-                                        <div className="row-title paddin-right-20">Blog</div>
-                                        <div className="row-title padding-top-20 mr-13 w-34 lh-27 mr-7 ">
-                                            Richton Wins
-                    <p className="row-description ">Dec 25 2018,02;30 PM</p>
+                                        <div className="row-title w-30"><a className="link-ct-title">How Marketing will be transformed</a></div>
+                                        <div className="row-title w-20 ml-20">Blog</div>
+                                        <div className="row-title w-20">
+                                            <p className="modified-by-name"> Richton Wins</p>
+                                            <p className="row-description ">Dec 25 2018,02;30 PM</p>
                                         </div>
-                                        <div className="row-title w-34 padding-left">Not Published
+                                        <div className="row-title w-20">
+                                        <p>Not Published</p>
+                                            {/* <ul >
+                                                <li className="publish-status">
+                                                    Not Published
+                                                </li>
+                                            </ul> */}
                                         </div>
-                                        <div className="row-title w-14"></div>
+                                        <div className="row-title w-20"></div>
                                     </li>
                                     <li className="row">
-                                        <div className="row-title padding-20"><a className="link-ct-title">Headless Ecommerce Architecture</a></div>
-                                        <div className="row-title paddin-right-20">Blog</div>
-                                        <div className="row-title padding-top-20 mr-13 w-34 lh-27 mr-7">
-                                            Richton Wins
-                    <p className="row-description ">Dec 25 2018,02;30 PM</p>
+                                        <div className="row-title w-30"><a className="link-ct-title">Headless Ecommerce Architecture</a></div>
+                                        <div className="row-title w-20 ml-20">Blog</div>
+                                        <div className="row-title w-20">
+                                            <p className="modified-by-name"> Richton Wins</p>
+                                            <p className="row-description ">Dec 25 2018,02;30 PM</p>
                                         </div>
-                                        <div className="row-title w-34 padding-left">Not Published
+                                        <div className="row-title w-20">
+                                        <p>Not Published</p>
+                                            {/* <ul >
+                                                <li className="publish-status">
+                                                    Not Published
+                                                </li>
+                                            </ul> */}
                                         </div>
-                                        <div className="row-title w-14"></div>
+                                        <div className="row-title w-20"></div>
                                     </li>
-                                    <li className="row br-5">
-                                        <div className="row-title padding-20"><a className="link-ct-title">Introducing Management Tokens</a></div>
-                                        <div className="row-title paddin-right-20">Blog</div>
-                                        <div className="row-title padding-top-20 mr-13 w-34 lh-27 mr-7">
-                                            Richton Wins
-                    <p className="row-description ">Dec 25 2018,02;30 PM</p>
+                                    <li className="row">
+                                        <div className="row-title w-30"><a className="link-ct-title">Introducing Management Tokens</a></div>
+                                        <div className="row-title w-20 ml-20">Blog</div>
+                                        <div className="row-title w-20">
+                                            <p className="modified-by-name"> Richton Wins</p>
+                                            <p className="row-description ">Dec 25 2018,02;30 PM</p>
                                         </div>
-                                        <div className="row-title w-34 padding-left lh-27"><ul>
-                                            <li className="staging">Staging</li>
-                                            <li className="production">Production</li>
+                                        <div className="row-title w-20"><ul>
+                                            <li className="staging color-green">Staging</li>
+                                            <li className="production color-blue">Production</li>
                                         </ul>
                                         </div>
-                                        <div className="row-title w-14"></div>
+                                        <div className="row-title w-20"></div>
                                     </li>
                                 </ul>
                             </div>

@@ -430,6 +430,11 @@ header .header-right-images .dropdown-icon {
   width: 20%;
   height: 707px;
 }
+@media screen and (max-width: 1280px) {
+  .main-section .search-content-type-wrapper-div {
+    width: 21%;
+  }
+}
 .main-section .search-content-type-wrapper-div .search-content-type {
   color: #708096;
   font-family: "Roboto";
@@ -446,6 +451,11 @@ header .header-right-images .dropdown-icon {
   padding-left: 70px;
   margin-top: 4px;
 }
+@media screen and (max-width: 1280px) {
+  .main-section .search-content-type-wrapper-div .search-content-type .list-view .list-view-image {
+    padding-left: 57px;
+  }
+}
 .main-section .search-content-type-wrapper-div .display-all-content-types {
   background: #FFFFFF;
   border-radius: 5px;
@@ -454,6 +464,11 @@ header .header-right-images .dropdown-icon {
   margin-left: 11px;
   margin-top: 37px;
   width: 250px;
+}
+@media screen and (max-width: 1280px) {
+  .main-section .search-content-type-wrapper-div .display-all-content-types {
+    width: 91%;
+  }
 }
 .main-section .search-content-type-wrapper-div .display-all-content-types .content-type-title {
   position: relative;
@@ -483,37 +498,10 @@ header .header-right-images .dropdown-icon {
 .main-section .search-content-type-wrapper-div .all-content-types .common-spacing-ct {
   padding-top: 22px;
 }
-@media (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
+  html,
   body {
-    max-width: 100%;
     overflow-x: hidden;
-  }
-}
-@media (max-width: 1125px) {
-  .dropdown-list-language {
-    position: relative;
-    left: 9.3%;
-    top: 40%;
-  }
-  .dropdown-for-language {
-    position: relative;
-    left: 10.1%;
-    top: 0;
-  }
-  .button-for-new-entry {
-    position: relative;
-    left: 16.1%;
-    top: 30%;
-  }
-  .show-entries {
-    position: relative;
-    left: 66%;
-    top: 35%;
-  }
-}
-@media (max-width: 968px) {
-  .display-all-content-types {
-    width: 235px;
   }
 }
 @font-face {
@@ -616,6 +604,13 @@ header .header-right-images .dropdown-icon {
   left: 17.3%;
   top: 40%;
 }
+@media screen and (max-width: 1280px) {
+  .main-wrapper .entries-section .dropdown-list-language {
+    position: relative;
+    left: 11.3%;
+    top: 40%;
+  }
+}
 .main-wrapper .entries-section .dropdown-list-language .language-selection {
   color: #424C64;
   font-family: "Roboto";
@@ -623,14 +618,23 @@ header .header-right-images .dropdown-icon {
   line-height: 15px;
 }
 .main-wrapper .entries-section .dropdown-for-language {
-  position: relative;
-  left: 18.1%;
-  top: 0;
+  height: 4px;
+  width: 7px;
+  position: absolute;
+  left: 107.1%;
+  top: 10%;
 }
 .main-wrapper .entries-section .button-for-new-entry {
   position: relative;
-  left: 20.1%;
+  left: 21%;
   top: 30%;
+}
+@media screen and (max-width: 1280px) {
+  .main-wrapper .entries-section .button-for-new-entry {
+    position: relative;
+    left: 15.5%;
+    top: 30%;
+  }
 }
 .main-wrapper .entries-section .button-for-new-entry .entry-button {
   color: #FFFFFF;
@@ -658,7 +662,7 @@ header .header-right-images .dropdown-icon {
   top: 36%;
   left: 0%;
 }
-.main-wrapper .top-header .publish-status .ps-link {
+.main-wrapper .top-header .publish-status-wrapper .ps-link {
   color: #708096;
   font-family: "Roboto";
   font-size: 13px;
@@ -667,10 +671,12 @@ header .header-right-images .dropdown-icon {
   left: 21.7%;
   top: 36%;
 }
-.main-wrapper .top-header .publish-status .dropdown-list {
+.main-wrapper .top-header .publish-status-wrapper .dropdown-list {
+  height: 4px;
+  width: 7px;
   position: absolute;
   left: 132%;
-  top: 47%;
+  top: 49%;
 }
 .main-wrapper .top-header .tags {
   position: relative;
@@ -687,6 +693,10 @@ header .header-right-images .dropdown-icon {
   position: relative;
   left: 24%;
   top: 4%;
+}
+.main-wrapper .top-header .tags .dropdown-for-tags .dropdown-list {
+  height: 4px;
+  width: 7px;
 }
 .main-wrapper .top-header .more-options {
   position: relative;
@@ -711,6 +721,13 @@ header .header-right-images .dropdown-icon {
   left: 67%;
   top: 35%;
 }
+@media screen and (max-width: 1280px) {
+  .main-wrapper .show-entries {
+    position: relative;
+    left: 64%;
+    top: 35%;
+  }
+}
 .main-wrapper .show-entries .total-entries {
   color: #708096;
   font-family: "Roboto";
@@ -720,7 +737,6 @@ header .header-right-images .dropdown-icon {
 .entry-wrapper {
   margin-left: 31px;
   margin-right: 25px;
-  margin-top: 14px;
 }
 .entry-wrapper .show-ct {
   width: 100%;
@@ -735,8 +751,9 @@ header .header-right-images .dropdown-icon {
   color: #708096;
   font-family: "Roboto";
   font-size: 13px;
-  line-height: 54px;
+  line-height: 15px;
   overflow: hidden;
+  padding: 20px 25px 17px 28px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -744,68 +761,67 @@ header .header-right-images .dropdown-icon {
   margin-left: 16px;
 }
 .entry-wrapper .show-ct ul .row .row-title ul .staging {
+  margin-top: -12px;
+}
+.entry-wrapper .show-ct ul .row .row-title ul .color-green {
   color: #00962A;
-  margin-top: 2px;
 }
 .entry-wrapper .show-ct ul .row .row-title ul .production {
-  margin-top: -7px;
+  margin-top: 5px;
+}
+.entry-wrapper .show-ct ul .row .row-title ul .color-blue {
+  color: #00D0EC;
 }
 .entry-wrapper .show-ct ul .row .row-title ul li {
-  color: #00D0EC;
   list-style: circle;
 }
 .entry-wrapper .show-ct ul .row .row-title .modified-by-dropdown {
+  height: 4px;
+  width: 7px;
   position: absolute;
-  left: 29%;
+  right: 42%;
 }
 .entry-wrapper .show-ct ul .row .row-title .row-description {
   color: #8599AD;
   font-family: "Roboto";
   font-size: 11px;
-  margin-top: -9px;
+  line-height: 13px;
+  margin-top: 3px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 .entry-wrapper .show-ct ul .row .row-title .dropdown-list {
+  height: 4px;
+  width: 7px;
   position: absolute;
-  right: 18%;
-  top: 24%;
+  right: -108%;
+  top: 40%;
 }
-.entry-wrapper .show-ct ul .row .row-title .cascade {
-  margin-left: 83px;
+.entry-wrapper .show-ct ul .row .w-20 {
+  width: 20%;
 }
-.entry-wrapper .show-ct ul .row .w-14 {
-  width: 14%;
-}
-.entry-wrapper .show-ct ul .row .padding-left {
-  margin-right: 13px;
-  width: 10%;
+.entry-wrapper .show-ct ul .row .cascade-dropdown-wrapper {
+  float: right;
 }
 .entry-wrapper .show-ct ul .row .font-12 {
+  font-family: "Roboto";
   font-size: 12px;
   line-height: 14px;
 }
-.entry-wrapper .show-ct ul .row .paddin-right-20 {
-  margin-right: 10px;
-  width: 18%;
+.entry-wrapper .show-ct ul .row .ml-20 {
+  margin-left: 19px;
 }
-.entry-wrapper .show-ct ul .row .paddin-right-20 .ct {
+.entry-wrapper .show-ct ul .row .ml-20 .ct {
   cursor: pointer;
 }
-.entry-wrapper .show-ct ul .row .mr-13 {
-  margin-right: 2px;
-  width: 24%;
+.entry-wrapper .show-ct ul .row .modified-by-name {
+  margin-top: -8px;
 }
-.entry-wrapper .show-ct ul .row .lh-27 {
-  line-height: 27px;
+.entry-wrapper .show-ct ul .row .padding-14 {
+  padding-top: 14px !important;
 }
-.entry-wrapper .show-ct ul .row .mr-7 {
-  margin-top: 7px;
-}
-.entry-wrapper .show-ct ul .row .padding-20 {
-  margin-right: 17px;
-  padding-left: 29px;
+.entry-wrapper .show-ct ul .row .w-30 {
   width: 30%;
 }
 .entry-wrapper .show-ct ul .row .link-ct-title {
@@ -814,19 +830,18 @@ header .header-right-images .dropdown-icon {
   font-size: 14px;
   line-height: 16px;
 }
-.entry-wrapper .show-ct ul .br-5 {
-  border-bottom: none;
+.entry-wrapper .show-ct ul .br-5-top {
   border-radius: 5px 5px 0px 0px;
+}
+.entry-wrapper .show-ct ul .row:last-child {
+  border-bottom: none;
+  border-radius: 0px 0px 5px 5px;
 }
 .entry-wrapper .show-ct ul .row-heading {
   background-color: #F7FAFC;
-  border-radius: 5px 5px 0px 0px;
   border-bottom: none;
   color: #708096;
-  height: 21px;
-  font-family: "Roboto";
-  font-size: 12px !important;
-  line-height: 14px;
+  height: 38px;
   text-transform: capitalize;
 }
 .pagination-wrapper {
