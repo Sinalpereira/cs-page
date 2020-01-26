@@ -85,6 +85,7 @@ video {
   font-family: "Roboto";
   vertical-align: baseline;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -92,10 +93,13 @@ video {
   -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
+
 /* make sure to set some focus styles for accessibility */
+
 :focus {
   outline: 0;
 }
+
 div {
   display: block;
   position: relative;
@@ -103,7 +107,9 @@ div {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -117,18 +123,22 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
   background: #fff;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -136,10 +146,12 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -147,24 +159,29 @@ input[type="search"] {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
+
 textarea {
   overflow: auto;
   vertical-align: top;
   resize: vertical;
 }
+
 /**
  * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
  * Known issue: no IE 6 support.
  */
+
 [hidden] {
   display: none;
 }
+
 /**
  * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
  *    `em` units.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+
 html {
   font-size: 100%;
   /* 1 */
@@ -173,47 +190,59 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
 }
+
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
+
 a:focus {
   outline: 0;
 }
+
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
+
 a:active,
 a:hover {
   outline: 0;
 }
+
 /**
  * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improve image quality when scaled in IE 7.
  */
+
 img {
   border: 0;
   /* 1 */
   -ms-interpolation-mode: bicubic;
   /* 2 */
 }
+
 /**
  * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
+
 figure {
   margin: 0;
 }
+
 /**
  * Correct margin displayed oddly in IE 6/7.
  */
+
 form {
   margin: 0;
 }
+
 /**
  * 1. Correct font size not being inherited in all browsers.
  * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
  *    and Chrome.
  * 3. Improve appearance and consistency in all browsers.
  */
+
 button,
 input,
 select,
@@ -227,24 +256,29 @@ textarea {
   *vertical-align: middle;
   /* 3 */
 }
+
 /**
  * Address Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
+
 button,
 input {
   line-height: normal;
 }
+
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
  * All other form control elements do not inherit `text-transform` values.
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
+
 button,
 select {
   text-transform: none;
 }
+
 button,
 html input[type="button"],
 input[type="reset"],
@@ -256,19 +290,23 @@ input[type="submit"] {
   *overflow: visible;
   /* 4 */
 }
+
 /**
  * Re-set default cursor for disabled elements.
  */
+
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
+
 /**
  * 1. Address box sizing set to content-box in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
+
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -280,11 +318,13 @@ input[type="radio"] {
   *width: 13px;
   /* 3 */
 }
+
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
+
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -293,64 +333,79 @@ input[type="search"] {
   /* 2 */
   box-sizing: content-box;
 }
+
 /**
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
+
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+
 /**
  * Remove inner padding and border in Firefox 3+.
  */
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
+
 /**
  * 1. Remove default vertical scrollbar in IE 6/7/8/9.
  * 2. Improve readability and alignment in all browsers.
  */
+
 textarea {
   overflow: auto;
   /* 1 */
   vertical-align: top;
   /* 2 */
 }
+
 /**
  * Remove most spacing between table cells.
  */
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
+
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
 }
+
 img {
   vertical-align: middle;
   max-width: 100%;
   height: auto;
 }
+
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
+
 textarea {
   resize: vertical;
 }
+
 header {
   background-color: #FFFFFF;
   height: 60px;
 }
+
 header .contentstack-logo-wrapper-div {
   display: inline-block;
   height: 35px;
@@ -358,39 +413,47 @@ header .contentstack-logo-wrapper-div {
   margin-top: 13.37px;
   width: 54px;
 }
+
 header .stack-name {
   display: inline-block;
   left: 1.1%;
   position: relative;
   top: -2%;
 }
+
 header .stack-name .stack-value {
   color: #000000;
   font-family: "Roboto";
   font-size: 17px;
   line-height: 20px;
 }
+
 header .stack-name span {
   margin-left: 5px;
 }
+
 header .stack-name span .dropdown-list {
   height: 5px;
   position: relative;
   left: 8%;
   width: 8px;
 }
+
 header .navbar {
   display: inline-block;
   position: relative;
   left: 5.9%;
   top: -4%;
 }
+
 header .navbar .nav-list {
   width: 100%;
 }
+
 header .navbar .nav-list .list-name {
   display: inline;
 }
+
 header .navbar .nav-list .list-name .nav-link {
   color: #2D3748;
   cursor: pointer;
@@ -398,27 +461,33 @@ header .navbar .nav-list .list-name .nav-link {
   line-height: 16px;
   padding: 0 48px 0 0;
 }
+
 header .navbar .nav-list .list-name .entry-link {
   color: #533DC0;
   font-weight: 500;
 }
+
 header .header-right-images {
   float: right;
   padding-top: 22px;
   padding-right: 9px;
 }
+
 header .header-right-images .to-do-task {
   position: relative;
   right: 152%;
 }
+
 header .header-right-images .question-mark {
   position: relative;
   right: 100%;
 }
+
 header .header-right-images .user-name-avatar {
   position: relative;
   right: 50%;
 }
+
 header .header-right-images .dropdown-icon {
   height: 4px;
   margin-top: -2px;
@@ -426,19 +495,17 @@ header .header-right-images .dropdown-icon {
   right: 30%;
   width: 7px;
 }
+
 .main-section {
   display: flex;
 }
+
 .main-section .search-content-type-wrapper-div {
   background-color: #EDF2F7;
   width: 20%;
   height: 707px;
 }
-@media screen and (max-width: 992px) {
-  .main-section .search-content-type-wrapper-div {
-    width: 27%;
-  }
-}
+
 .main-section .search-content-type-wrapper-div .search-content-type {
   color: #708096;
   font-family: "Roboto";
@@ -448,20 +515,18 @@ header .header-right-images .dropdown-icon {
   padding-left: 40px;
   text-transform: uppercase;
 }
+
 .main-section .search-content-type-wrapper-div .search-content-type .search-image {
   padding-left: 9px;
 }
+
 .main-section .search-content-type-wrapper-div .search-content-type .list-view .list-view-image {
   height: 10px;
   padding-left: 70px;
   margin-top: 6px;
   width: 14px;
 }
-@media screen and (min-width: 1280px) and (max-width: 1320px) {
-  .main-section .search-content-type-wrapper-div .search-content-type .list-view .list-view-image {
-    padding-left: 60px;
-  }
-}
+
 .main-section .search-content-type-wrapper-div .display-all-content-types {
   background: #FFFFFF;
   border-radius: 5px;
@@ -471,21 +536,25 @@ header .header-right-images .dropdown-icon {
   margin-top: 37px;
   width: 92.3%;
 }
+
 .main-section .search-content-type-wrapper-div .display-all-content-types .content-type-title {
   position: relative;
   top: 22%;
   left: 11.4%;
 }
+
 .main-section .search-content-type-wrapper-div .display-all-content-types .content-type-title a {
   color: #533DC0;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
 }
+
 .main-section .search-content-type-wrapper-div .all-content-types {
   padding-left: 39px;
   padding-top: 14px;
 }
+
 .main-section .search-content-type-wrapper-div .all-content-types .content-type .ct-link {
   color: #424C64;
   cursor: pointer;
@@ -496,15 +565,11 @@ header .header-right-images .dropdown-icon {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .main-section .search-content-type-wrapper-div .all-content-types .common-spacing-ct {
   padding-top: 22px;
 }
-@media screen and (min-width: 992px) {
-  html,
-  body {
-    overflow-x: hidden;
-  }
-}
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -512,6 +577,7 @@ header .header-right-images .dropdown-icon {
   font-display: swap;
   src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
 }
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -519,6 +585,7 @@ header .header-right-images .dropdown-icon {
   font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -526,6 +593,7 @@ header .header-right-images .dropdown-icon {
   font-display: swap;
   src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
 }
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -533,6 +601,7 @@ header .header-right-images .dropdown-icon {
   font-display: swap;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
 }
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -540,24 +609,24 @@ header .header-right-images .dropdown-icon {
   font-display: swap;
   src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfBBc9.ttf) format('truetype');
 }
+
 .main-wrapper {
   background-color: #F7FAFC;
   width: 80%;
 }
-@media screen and (max-width: 992px) {
-  .main-wrapper {
-    width: 70%;
-  }
-}
+
 .main-wrapper .entries-section {
   height: 86px;
 }
+
 .main-wrapper .entries-section .left {
   float: left;
 }
+
 .main-wrapper .entries-section .left .entries-title {
   display: inline-block;
 }
+
 .main-wrapper .entries-section .left .entries-title .title {
   color: #000000;
   font-family: "Roboto";
@@ -566,17 +635,14 @@ header .header-right-images .dropdown-icon {
   width: 68px;
   height: 26px;
 }
+
 .main-wrapper .entries-section .left .search-entries {
   display: inline-block;
   margin-left: 64px;
   width: 450px;
   height: 33px;
 }
-@media (min-width: 992px) and (max-width: 1125px) {
-  .main-wrapper .entries-section .left .search-entries {
-    width: 330px;
-  }
-}
+
 .main-wrapper .entries-section .left .search-entries span .search-image {
   position: absolute;
   z-index: 1;
@@ -585,6 +651,7 @@ header .header-right-images .dropdown-icon {
   height: 13px;
   width: 13px;
 }
+
 .main-wrapper .entries-section .left .search-entries input[type="text"] {
   color: #708096;
   background-color: #FFFFFF;
@@ -601,9 +668,11 @@ header .header-right-images .dropdown-icon {
   width: 96%;
   position: relative;
 }
+
 .main-wrapper .entries-section .left .search-entries ::placeholder {
   padding-bottom: 5px;
 }
+
 .main-wrapper .entries-section .left .advanved-option {
   display: inline-block;
   cursor: pointer;
@@ -611,6 +680,7 @@ header .header-right-images .dropdown-icon {
   right: 7%;
   top: 50%;
 }
+
 .main-wrapper .entries-section .left .advanved-option .adv-btn {
   color: #708096;
   border-left: 1px solid #ecedef;
@@ -620,21 +690,25 @@ header .header-right-images .dropdown-icon {
   line-height: 15px;
   padding-left: 13px;
 }
+
 .main-wrapper .entries-section .right {
   float: right;
 }
+
 .main-wrapper .entries-section .right .dropdown-list-language {
   display: inline-block;
   margin-right: 43px;
   margin-top: 8px;
   height: 15px;
 }
+
 .main-wrapper .entries-section .right .dropdown-list-language .language-selection {
   color: #424C64;
   font-family: "Roboto";
   font-size: 13px;
   line-height: 15px;
 }
+
 .main-wrapper .entries-section .right .dropdown-for-language {
   height: 4px;
   width: 7px;
@@ -642,10 +716,12 @@ header .header-right-images .dropdown-icon {
   top: 55%;
   left: 108%;
 }
+
 .main-wrapper .entries-section .right .button-for-new-entry {
   display: inline-block;
   margin-right: 16px;
 }
+
 .main-wrapper .entries-section .right .button-for-new-entry .entry-button {
   color: #FFFFFF;
   background: #533DC0;
@@ -656,41 +732,50 @@ header .header-right-images .dropdown-icon {
   line-height: 15px;
   padding: 5px 30px 10px 28px;
 }
+
 .main-wrapper .entries-section .common-padding {
   padding: 25px 10px 5px 28px;
 }
+
 .main-wrapper .top-header-wrapper {
   height: 10%;
   margin-left: 29px;
   margin-right: 27px;
   border-top: 1px solid #ECEDEF;
 }
+
 .main-wrapper .top-header-wrapper .top-header {
   margin-top: 23px;
 }
+
 .main-wrapper .top-header-wrapper .top-header .left-option {
   float: left;
 }
+
 .main-wrapper .top-header-wrapper .top-header .left-option .filters {
   display: inline-block;
 }
+
 .main-wrapper .top-header-wrapper .top-header .left-option .filters .filter-link {
   color: #708096;
   font-family: "Roboto";
   font-size: 13px;
   line-height: 15px;
 }
+
 .main-wrapper .top-header-wrapper .top-header .left-option .publish-status-wrapper {
   display: inline-block;
   margin-left: 18px;
   position: relative;
 }
+
 .main-wrapper .top-header-wrapper .top-header .left-option .publish-status-wrapper .ps-link {
   color: #708096;
   font-family: "Roboto";
   font-size: 13px;
   line-height: 15px;
 }
+
 .main-wrapper .top-header-wrapper .top-header .left-option .publish-status-wrapper .dropdown-list {
   position: absolute;
   left: 112%;
@@ -698,31 +783,37 @@ header .header-right-images .dropdown-icon {
   height: 5px;
   width: 8px;
 }
+
 .main-wrapper .top-header-wrapper .top-header .left-option .tags {
   display: inline-block;
   margin-left: 51px;
   position: relative;
 }
+
 .main-wrapper .top-header-wrapper .top-header .left-option .tags .tag-link {
   color: #708096;
   font-family: "Roboto";
   font-size: 13px;
   line-height: 15px;
 }
+
 .main-wrapper .top-header-wrapper .top-header .left-option .tags .dropdown-for-tags {
   position: absolute;
   right: -61%;
   top: 9%;
 }
+
 .main-wrapper .top-header-wrapper .top-header .left-option .tags .dropdown-for-tags .dropdown-list {
   height: 4px;
   margin-top: 1px;
   width: 7px;
 }
+
 .main-wrapper .top-header-wrapper .top-header .left-option .more-options {
   display: inline-block;
   margin-left: 51px;
 }
+
 .main-wrapper .top-header-wrapper .top-header .left-option .more-options .more-features {
   color: #708096;
   font-family: "Roboto";
@@ -730,31 +821,38 @@ header .header-right-images .dropdown-icon {
   line-height: 15px;
   margin-left: 9px;
 }
+
 .main-wrapper .top-header-wrapper .top-header .right-total-entries {
   float: right;
 }
+
 .main-wrapper .top-header-wrapper .top-header .right-total-entries .show-entries {
   display: inline-block;
 }
+
 .main-wrapper .top-header-wrapper .top-header .right-total-entries .show-entries .total-entries {
   color: #708096;
   font-family: "Roboto";
   font-size: 13px;
   line-height: 15px;
 }
+
 .entry-wrapper {
   margin-left: 31px;
   margin-right: 25px;
 }
+
 .entry-wrapper .show-ct {
   width: 100%;
 }
+
 .entry-wrapper .show-ct ul .row {
   background-color: #FFFFFF;
   border-bottom: 1px solid #ecedef;
   display: flex;
   height: 54px;
 }
+
 .entry-wrapper .show-ct ul .row .row-title {
   color: #708096;
   font-family: "Roboto";
@@ -765,33 +863,42 @@ header .header-right-images .dropdown-icon {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .entry-wrapper .show-ct ul .row .row-title ul {
   margin-left: 16px;
 }
+
 .entry-wrapper .show-ct ul .row .row-title ul .staging {
   margin-top: -12px;
 }
+
 .entry-wrapper .show-ct ul .row .row-title ul .color-green {
   color: #00962A;
 }
+
 .entry-wrapper .show-ct ul .row .row-title ul .production {
   margin-top: 5px;
 }
+
 .entry-wrapper .show-ct ul .row .row-title ul .color-blue {
   color: #00D0EC;
 }
+
 .entry-wrapper .show-ct ul .row .row-title ul li {
   list-style: circle;
 }
+
 .entry-wrapper .show-ct ul .row .row-title .modified-by-dropdown {
   position: absolute;
   bottom: 25%;
   right: 42%;
 }
+
 .entry-wrapper .show-ct ul .row .row-title .modified-by-dropdown .modified-by {
   height: 4px;
   width: 7px;
 }
+
 .entry-wrapper .show-ct ul .row .row-title .row-description {
   color: #8599AD;
   font-family: "Roboto";
@@ -802,6 +909,7 @@ header .header-right-images .dropdown-icon {
   overflow: hidden;
   white-space: nowrap;
 }
+
 .entry-wrapper .show-ct ul .row .row-title .dropdown-list {
   height: 4px;
   width: 7px;
@@ -809,32 +917,41 @@ header .header-right-images .dropdown-icon {
   right: -108%;
   top: 49%;
 }
+
 .entry-wrapper .show-ct ul .row .w-20 {
   width: 20%;
 }
+
 .entry-wrapper .show-ct ul .row .cascade-dropdown-wrapper {
   float: right;
 }
+
 .entry-wrapper .show-ct ul .row .font-12 {
   font-family: "Roboto";
   font-size: 12px;
   line-height: 14px;
 }
+
 .entry-wrapper .show-ct ul .row .ml-20 {
   margin-left: 19px;
 }
+
 .entry-wrapper .show-ct ul .row .ml-20 .ct {
   cursor: pointer;
 }
+
 .entry-wrapper .show-ct ul .row .modified-by-name {
   margin-top: -8px;
 }
+
 .entry-wrapper .show-ct ul .row .padding-14 {
   padding-top: 14px !important;
 }
+
 .entry-wrapper .show-ct ul .row .w-30 {
   width: 30%;
 }
+
 .entry-wrapper .show-ct ul .row .link-ct-title {
   color: #2D3748;
   cursor: pointer;
@@ -842,13 +959,16 @@ header .header-right-images .dropdown-icon {
   line-height: 16px;
   text-transform: capitalize;
 }
+
 .entry-wrapper .show-ct ul .br-5-top {
   border-radius: 5px 5px 0px 0px;
 }
+
 .entry-wrapper .show-ct ul .row:last-child {
   border-bottom: none;
   border-radius: 0px 0px 5px 5px;
 }
+
 .entry-wrapper .show-ct ul .row-heading {
   background-color: #F7FAFC;
   border-bottom: none;
@@ -856,6 +976,7 @@ header .header-right-images .dropdown-icon {
   height: 38px;
   text-transform: capitalize;
 }
+
 .pagination-wrapper {
   color: #708096;
   font-family: "Roboto";
@@ -864,23 +985,57 @@ header .header-right-images .dropdown-icon {
   margin-top: 27px;
   text-align: center;
 }
+
 .pagination-wrapper .left-arrow-one {
   margin-left: 6px;
   margin-right: 20px;
 }
+
 .pagination-wrapper .left-arrow-two {
   margin-left: 6px;
   margin-right: 20px;
 }
+
 .pagination-wrapper .right-arrow-one {
   margin-left: 20px;
   margin-right: 6px;
 }
+
 .pagination-wrapper .right-arrow-two {
   margin-left: 20px;
   margin-right: 6px;
 }
+
 .pagination-wrapper .pagination-arrow .pagination-icon {
   height: 5px;
   width: 8px;
+}
+
+@media screen and (min-width: 992px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main-section .search-content-type-wrapper-div {
+    width: 27%;
+  }
+
+  .main-wrapper {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1320px) {
+  .main-section .search-content-type-wrapper-div .search-content-type .list-view .list-view-image {
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1125px) {
+  .main-wrapper .entries-section .left .search-entries {
+    width: 330px;
+  }
 }

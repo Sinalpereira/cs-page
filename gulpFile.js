@@ -1,6 +1,8 @@
 var gulp=require('gulp');
 var less=require('gulp-less');
 var postcss=require('gulp-postcss');
+var gcmq = require('gulp-group-css-media-queries');
+var cmq=require('gulp-combine-media-queries');
 var autoprefixer=require('autoprefixer');
 var cssnano=require('cssnano');
 
@@ -13,14 +15,18 @@ gulp.task("css",function(){
     .pipe(postcss(plugins))
     .pipe(gulp.dest('src/dest'));
 })
-
+gulp.task('gcmq', function () {
+  gulp.src('src/dist/index.css')
+      .pipe(gcmq())
+      .pipe(gulp.dest('src/mediaquery'));
+});
 // -------------------watch task-------------------//
 gulp.task("watch", function() {
     gulp.watch("src/less/*.less", ["css"]);
-  });
-  
+  }); 
 // -------------------default task-------------------//
   gulp.task("default", [
     "watch",
-    "css"
+    "css",
+    "gcmq"
   ]);

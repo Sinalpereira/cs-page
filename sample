@@ -1,100 +1,307 @@
-import React, { Component } from 'react';
-import searchImage from '../Task File Icons/ct_search_large.svg';
-import smallSearch from '../Task File Icons/entry_search_small.svg';
-import dropdown from '../Task File Icons/grey_drop_down.svg';
-import cascade from '../Task File Icons/cascade.svg';
-import listView from '../Task File Icons/ct_list_view.svg';
-import languageDropDown from '../Task File Icons/language_dropdown.svg';
-import plusMore from '../Task File Icons/plus.svg';
-import leftArrowOne from '../Task File Icons/pagination_1.svg';
-import leftArrowTwo from '../Task File Icons/pagination_2.svg';
-import rightArrowOne from '../Task File Icons/pagination_3.svg';
-import rightArrowTwo from '../Task File Icons/pagination_4.svg';
-import downArrow from '../Task File Icons/pagination_5.svg';
+.entries-section {
+        // display: flex;
+        // height : @height-80-px+6;
+        .left{
+            float:left;
+
+        
+
+        // .entries-title {
+                display: inline-block;
+
+        //     .title {
+        //         color      : @color-black;
+        //         font-family: @roboto;
+        //         font-size  : @font22;
+        //         line-height: @line-height-26;
+        //         position   : relative;
+        //         left       : 43%;
+        //         top        : 34%;
+        //     }
+        // }
+
+        // .search-entries {
+            display: inline-block;
+        //     position: relative;
+        //     left    : 8.9%;
+        //     top     : 32%;
+        //     width   : 450px;
+
+        //     span {
+        //         .search-image {
+        //             height: 13px;
+        //             position: absolute;
+        //             top     : 12%;
+        //             left    : 3.5%;
+        //             width: 13px;
+        //         }
+        //     }
+
+        //     input[type="text"] {
+        //         color           : @font-color-grey;
+        //         background-color: @color-white;
+        //         border          : 1px solid @color-light-grey;
+        //         box-sizing      : border-box;
+        //         box-shadow      : 0 0.1px 4px rgba(0, 0, 0, .06);
+        //         border-radius   : @border-radius-5;
+        //         font-family     : @roboto;
+        //         font-size       : @font13;
+        //         height          : @height-30-px+3;
+        //         line-height     : @line-height-15;
+        //         padding-left    : @padding-30+10;
+        //         padding-right   : 10px;
+        //         width           : 93%;
+
+        //         @media screen and (max-width: 992px) {
+        //             width: 75%;
+        //         }
+        //     }
+
+        //     ::placeholder {
+        //         padding-bottom: 1px;
+        //     }
+        // }
+
+        // .advanved-option {
+            display: inline-block;
+        //     cursor  : pointer;
+        //     position: relative;
+        //     top     : 42%;
+        //     left    : -2.4%;
+
+        //     @media screen and (max-width: 992px) {
+        //         position: relative;
+        //     top: 42%;
+        //     left: -17.4%;
+        //     }
+
+        //     .adv-btn {
+        //         color        : @font-color-grey;
+        //         border-left  : 1px solid #ecedef;
+        //         border-radius: @border-radius-1;
+        //         font-family  : @roboto;
+        //         font-size    : @font13;
+        //         line-height  : @line-height-15;
+        //         padding-left : @padding-10+3;
+        //     }
+        // }
+        }
+           .right{
+               float:right;
+        // .dropdown-list-language {
+            display: inline-block;
+        //     position: relative;
+        //     left    : 17.3%;
+        //     top     : 40%;
+        //     width: 12%;
+
+        //     @media screen and (max-width: 1280px) {
+        //         position: relative;
+        //         left    : 11.3%;
+        //         top     : 40%;
+        //     }
+
+        //     @media screen and (max-width: 992px) {
+        //         position: relative;
+        //         left: -8.7%;
+        //         width: 24%;
+        //     }
+
+        //     .language-selection {
+        //         color      : @light-grey;
+        //         font-family: @roboto;
+        //         font-size  : @font13;
+        //         line-height: @line-height-15;
+        //     }
+        // }
+
+        // .dropdown-for-language {
+        //     height  : 4px;
+        //     width   : 7px;
+        //     position: absolute;
+        //     left    : 107.1%;
+        //     top     : 9%;
+        // }
+
+        // .button-for-new-entry {
+            display: inline-block;
+        //     position: relative;
+        //     left    : 21%;
+        //     top     : 30%;
+        //     width: 15%;
+
+        //     @media screen and (max-width: 1280px) {
+        //         position: relative;
+        //         left    : 15.5%;
+        //         top     : 30%;
+        //     }
+
+        //     @media screen and (max-width: 992px) {
+        //         position: relative;
+        //         left: -3%;
+        //         width: 23%;
+        //     }
+
+        //     // @media screen and (max-width: 1280px) {
+        //     //     position: relative;
+        //     //     left    : 15.5%;
+        //     // }
+
+        //     // @media screen and (max-width:1256px) {
+        //     //     position: relative;
+        //     //     left    : 14%;
+        //     // }
+
+        //     // @media screen and (max-width: 1220px) {
+        //     //     position: relative;
+        //     //     left    : 12.5%;
+        //     // }
+
+        //     // @media screen and (max-width: 1125px) {
+        //     //     position: relative;
+        //     //     left    : -0.5%;
+        //     // }
+
+
+        //     .entry-button {
+        //         color        : @color-white;
+        //         background   : @color-purple;
+        //         border       : none;
+        //         border-radius: @border-radius-5;
+        //         font-family  : @roboto;
+        //         font-size    : @font13;
+        //         line-height  : @line-height-15;
+        //         padding      : @padding-5 @padding-30 @padding-10 @padding-25+3;
+        //     }
+        // }
+           }
+    }
+    /////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+ .top-header {
+        border-top  : 1px solid#ECEDEF;
+        display     : flex;
+        height      : @height-10;
+        margin-left : @margin-30;
+        margin-right: @margin-25+1;
+
+        .filters {
+            .filter-link {
+                color      : #708096;
+                font-family: @roboto;
+                font-size  : @font13;
+                line-height: @line-height-15;
+                position   : relative;
+                top        : 36%;
+                left       : 0%;
+            }
+        }
+
+        .publish-status-wrapper {
+            .ps-link {
+                color      : @font-color-grey;
+                font-family: @roboto;
+                font-size  : @font13;
+                line-height: @line-height-15;
+                position   : relative;
+                left       : 21.7%;
+                top        : 36%;
+            }
+
+            .dropdown-list {
+                height  : 5px;
+                width   : 8px;
+                position: absolute;
+                left    : 132%;
+                top     : 48%;
+            }
+        }
+
+        .tags {
+            position: relative;
+            left    : 6.7%;
+            top     : 35%;
+
+            .tag-link {
+                color      : @font-color-grey;
+                font-family: @roboto;
+                font-size  : @font13;
+                line-height: @line-height-15;
+            }
+
+            .dropdown-for-tags {
+                position: relative;
+                left    : 24%;
+                top     : 4%;
+
+                .dropdown-list {
+                    height    : 4px;
+                    margin-top: 1px;
+                    width     : 7px;
+                }
+            }
+        }
+
+        .more-options {
+            position: relative;
+            left    : 11%;
+            top     : 35%;
+
+            .plus-more-image {
+
+                // height: 7px;
+
+                position   : relative;
+                right      : 2%;
+                top        : 2%;
+                // width   : 1.17px;
+            }
+
+            .more-features {
+                color      : @font-color-grey;
+                font-family: @roboto;
+                font-size  : @font13;
+                line-height: @line-height-15;
+                position   : relative;
+                position   : relative;
+                left       : 28%;
+            }
+        }
+    }
+
+    .show-entries {
+        position: relative;
+        left    : 67%;
+        top     : 35%;
+
+        @media screen and (max-width: 1280px) {
+            position: relative;
+            left    : 64%;
+            top     : 35%;
+        }
+
+        @media screen and (max-width: 992px) {
+            position: relative;
+            left    : 49%;
+        }
+
+
+        .total-entries {
+            color      : @font-color-grey;
+            font-family: @roboto;
+            font-size  : @font13;
+            line-height: @line-height-15;
+        }
+    }
 
 
 
-class MainSection extends Component {
-    render() {
-        return (
-            <React.Fragment>
-                <div class="main-section">
-                    <div className="search-content-type-wrapper-div">
-                        <section className="search-content-type">
-                            <span className="content-type-title">content types</span>
-                            <span className="search-image"><img src={searchImage} alt="search-image"></img></span>
-                            <span className="list-view"><img src={listView} alt="list-view" className="list-view-image"></img></span>
-                        </section>
-                        <section className="display-all-content-types">
-                            <p className="content-type-title">
-                                <a>All Content Types</a>
-                            </p>
-                        </section>
-                        <section className="all-content-types">
-                            <div className="content-type"><a className="ct-link">Blog</a></div>
-                            <div className="content-type common-spacing-ct"><a className="ct-link">Categories</a></div>
-                            <div className="content-type common-spacing-ct"><a className="ct-link">Product</a></div>
-                            <div className="content-type common-spacing-ct"><a className="ct-link">Product Home</a></div>
-                            <div className="content-type common-spacing-ct"><a className="ct-link">Locations</a></div>
-                            <div className="content-type common-spacing-ct"><a className="ct-link">Reviews</a></div>
-                            <div className="content-type common-spacing-ct"><a className="ct-link">Inventry</a></div>
-                            <div className="content-type common-spacing-ct"><a className="ct-link">Payments</a></div>
-                            <div className="content-type common-spacing-ct"><a className="ct-link">Offers</a></div>
-                            <div className="content-type common-spacing-ct"><a className="ct-link">Rejects</a></div>
-                            <div className="content-type common-spacing-ct"><a className="ct-link">Returns</a></div>
-                            <div className="content-type common-spacing-ct"><a className="ct-link">Imports</a></div>
-                        </section>
-                    </div>
-                    <div className="main-wrapper">
-                        <div className="entries-section">
-                            <div className="left common-padding">
-                                <div className="entries-title">
-                                    <p className="title">Entries</p>
-                                </div>
-                                <div className="search-entries">
-                                    <span><img src={smallSearch} alt="search-image" className="search-image"></img></span>
-                                    <span
-                                    ><input type="text" name="search" placeholder="Search entries"
-                                        /></span>
-                                </div>
-                                <div className="advanved-option">
-                                    <a className="adv-btn">Advanced</a>
-                                </div>
-                            </div>
-                            <div className="right common-padding padding-left-0">
-                                <div className="dropdown-list-language">
-                                    <span className="language-selection">English-United States</span>
-                                    <span><img src={languageDropDown} alt="dropdown-icon" className="dropdown-for-language"></img></span>
-                                </div>
 
-                                <div className="button-for-new-entry">
-                                    <button className="entry-button">New Entry</button>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div className="top-header-wrapper">
-                            <div className="top-header">
-                                <div className="left-option">
-                                <div className="filters">
-                                    <a className="filter-link">Filters</a></div>
-                                <div className="publish-status-wrapper">
-                                    <a className="ps-link">Publish status</a>
-                                    <span><img src={dropdown} alt="dropdown" class="dropdown-list"></img></span></div>
-                                <div className="tags">
-                                    <a className="tag-link">Tags</a>
-                                    <span class="dropdown-for-tags"><img src={dropdown} alt="dropdown" class="dropdown-list"></img></span></div>
-                                <div className="more-options">
-                                    <span><img src={plusMore} className="plus-more-image"></img></span>
-                                    <a className="more-features">More</a>
-                                </div>
-                            </div>
-                            <div className="right-total-entries">
-                                <div className="show-entries">
-                                    <p className="total-entries">Showing 1-7 of 32 entries</p></div>
-                            </div></div>
-                            
-                        </div>
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
                         <div className="entry-wrapper">
                             <div className="show-ct">
                                 <ul>
@@ -127,7 +334,7 @@ class MainSection extends Component {
                                             <p class="row-description">Dec 25 2018,02;30 PM</p>
                                         </div>
                                         <div class="row-title w-20">
-                                            <p className="publish-status">Not Published</p>
+                                            <p>Not Published</p>
                                             {/* <ul >
                                                 <li className="publish-status">
                                                     Not Published
@@ -145,8 +352,8 @@ class MainSection extends Component {
                                         </div>
                                         <div class="row-title w-20">
                                             <ul>
-                                                <li className="staging color-green publish-status">Staging</li>
-                                                <li className="production color-blue publish-status">Production</li>
+                                                <li className="staging color-green">Staging</li>
+                                                <li className="production color-blue">Production</li>
                                             </ul>
                                         </div>
                                         <div className="row-title w-20"></div>
@@ -173,8 +380,8 @@ class MainSection extends Component {
                                             <p className="row-description ">Dec 25 2018,02;30 PM</p>
                                         </div>
                                         <div className="row-title w-20"><ul>
-                                            <li className="staging color-green publish-status">Staging</li>
-                                            <li className="production color-blue publish-status">Production</li>
+                                            <li className="staging color-green">Staging</li>
+                                            <li className="production color-blue">Production</li>
                                         </ul>
                                         </div>
                                         <div className="row-title w-20"></div>
@@ -187,7 +394,7 @@ class MainSection extends Component {
                                             <p className="row-description ">Dec 25 2018,02;30 PM</p>
                                         </div>
                                         <div className="row-title w-20">
-                                        <p className="publish-status">Not Published</p>
+                                        <p>Not Published</p>
                                             {/* <ul >
                                                 <li className="publish-status">
                                                     Not Published
@@ -204,7 +411,7 @@ class MainSection extends Component {
                                             <p className="row-description ">Dec 25 2018,02;30 PM</p>
                                         </div>
                                         <div className="row-title w-20">
-                                        <p className="publish-status">Not Published</p>
+                                        <p>Not Published</p>
                                             {/* <ul >
                                                 <li className="publish-status">
                                                     Not Published
@@ -221,8 +428,8 @@ class MainSection extends Component {
                                             <p className="row-description ">Dec 25 2018,02;30 PM</p>
                                         </div>
                                         <div className="row-title w-20"><ul>
-                                            <li className="staging color-green publish-status">Staging</li>
-                                            <li className="production color-blue publish-status">Production</li>
+                                            <li className="staging color-green">Staging</li>
+                                            <li className="production color-blue">Production</li>
                                         </ul>
                                         </div>
                                         <div className="row-title w-20"></div>
@@ -241,14 +448,3 @@ class MainSection extends Component {
                             
                            
                         </section>
-
-
-                    </div>
-                </div>
-
-            </React.Fragment>
-        );
-    }
-}
-
-export default MainSection;
