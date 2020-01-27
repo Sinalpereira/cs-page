@@ -543,6 +543,7 @@ header .header-right-images .dropdown-icon {
 .main-wrapper {
   background-color: #F7FAFC;
   width: 80%;
+  height: 708px;
 }
 @media screen and (max-width: 992px) {
   .main-wrapper {
@@ -833,7 +834,7 @@ header .header-right-images .dropdown-icon {
   padding-top: 14px !important;
 }
 .entry-wrapper .show-ct ul .row .w-30 {
-  width: 30%;
+  width: 31%;
 }
 .entry-wrapper .show-ct ul .row .link-ct-title {
   color: #2D3748;
