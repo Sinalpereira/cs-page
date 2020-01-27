@@ -61,7 +61,7 @@ class MainSection extends Component {
                                     <a className="adv-btn">Advanced</a>
                                 </div>
                             </div>
-                            <div className="right common-padding padding-left-0">
+                            <div className="right common-padding">
                                 <div className="dropdown-list-language">
                                     <span className="language-selection">English-United States</span>
                                     <span><img src={languageDropDown} alt="dropdown-icon" className="dropdown-for-language"></img></span>

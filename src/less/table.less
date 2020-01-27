@@ -1,8 +1,9 @@
 .main-wrapper {
     background-color: @background-color-grey;
     width           : @width-80;
+
     @media screen and (max-width: 992px) {
-        width : 70%;        
+        width: 70%;
     }
 
     .entries-section {
@@ -32,12 +33,9 @@
                 height     : 33px;
 
                 @media (min-width: 992px) and (max-width: 1125px) {
-                    width: 330px;
-
+                    // width: 330px;
+                    width   : 71%;
                 }
-
-
-
 
                 span {
                     .search-image {
@@ -138,13 +136,10 @@
 
         .common-padding {
             padding: 25px 10px 5px 28px;
+            // @media (min-width: 992px) and (max-width: 1125px) {
+            //    // padding: 10px;
+            // }
         }
-
-        // @media screen and (min-width: 992px) {
-        //     .padding-left-0 {
-        //         padding: 25px 10px 5px 0px;
-        //     }
-        // }
     }
 
     .top-header-wrapper {
@@ -349,11 +344,9 @@
                     width: 20%;
                 }
 
-                .publish-status {
-                    // overflow     : hidden;
-                    // text-overflow: ellipsis;
-                    // white-space  : nowrap;
-                }
+                // .publish-status {
+                //    text-overflow: inherit;
+                // }
 
                 .cascade-dropdown-wrapper {
                     float: right;

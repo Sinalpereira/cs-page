@@ -1036,6 +1036,6 @@ header .header-right-images .dropdown-icon {
 
 @media (min-width: 992px) and (max-width: 1125px) {
   .main-wrapper .entries-section .left .search-entries {
-    width: 330px;
+    width: 71%;
   }
 }
