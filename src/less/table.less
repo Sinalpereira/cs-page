@@ -1,11 +1,7 @@
 .main-wrapper {
     background-color: @background-color-grey;
     width           : @width-80;
-    height: 708px;
-
-    @media screen and (max-width: 992px) {
-        width: 70%;
-    }
+    height          : 708px;
 
     .entries-section {
         height: 86px;
@@ -33,9 +29,10 @@
                 width      : 450px;
                 height     : 33px;
 
-                @media (min-width: 992px) and (max-width: 1125px) {
-                    // width: 330px;
-                    width   : 71%;
+                @media (min-width: 992px) and (max-width: 1196px) {
+                    // width   : 330px;
+                    margin-left: 9px;
+                    width: 81%;
                 }
 
                 span {
@@ -80,6 +77,11 @@
                 right   : 7%;
                 top     : 50%;
 
+                @media (min-width: 992px) and (max-width: 1196px) {
+                    position: absolute;
+                    right   : 8%;
+                }
+
                 .adv-btn {
                     color        : @font-color-grey;
                     border-left  : 1px solid #ecedef;
@@ -110,8 +112,8 @@
             }
 
             .dropdown-for-language {
-                height  : 4px;
-                width   : 7px;
+                height  : 5px;
+                width   : 8px;
                 position: absolute;
                 top     : 55%;
                 left    : 108%;
@@ -211,9 +213,9 @@
 
 
                         .dropdown-list {
-                            height    : 4px;
+                            height    : 5px;
                             margin-top: 1px;
-                            width     : 7px;
+                            width     : 8px;
                         }
                     }
                 }
@@ -223,7 +225,10 @@
                     margin-left: 51px;
 
 
-                    .plus-more-image {}
+                    .plus-more-image {
+                        height: 7px;
+                        width : 7px;
+                    }
 
                     .more-features {
                         color      : @font-color-grey;
@@ -313,8 +318,8 @@
                         right   : 42%;
 
                         .modified-by {
-                            height: 4px;
-                            width : 7px;
+                            height: 5px;
+                            width : 8px;
                         }
                     }
 
@@ -330,8 +335,8 @@
                     }
 
                     .dropdown-list {
-                        height  : 4px;
-                        width   : 7px;
+                        height  : 5px;
+                        width   : 8px;
                         position: absolute;
                         right   : -108%;
                         top     : 49%;
@@ -377,8 +382,8 @@
                 }
 
                 .w-30 {
-                   // width: 30%;
-                   width: 31%;
+                    // width: 30%;
+                    width   : 31%;
                 }
 
                 .link-ct-title {

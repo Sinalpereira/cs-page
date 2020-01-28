@@ -10,12 +10,7 @@ var pcmq = require ('postcss-extract-media-query');
 
 // -------------------css task-------------------//
 gulp.task("css",function(){
-  var plugins=[cssnano(),autoprefixer(),pcmq({
-    output : {
-      path : path.join('src/postcss','postcss'),
-      name: '[name]-[query].[ext]'
-    }
-  })];
+  var plugins=[cssnano(),autoprefixer()];
     return gulp.src('src/less/index.less')
     .pipe(less())
     .pipe(gulp.dest('src/dist'))

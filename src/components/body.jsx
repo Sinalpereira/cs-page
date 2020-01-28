@@ -22,7 +22,7 @@ class MainSection extends Component {
                     <div className="search-content-type-wrapper-div">
                         <section className="search-content-type">
                             <span className="content-type-title">content types</span>
-                            <span className="search-image"><img src={searchImage} alt="search-image"></img></span>
+                            <span className="search-ct"><img src={searchImage} alt="search-image" className="search-icon"></img></span>
                             <span className="list-view"><img src={listView} alt="list-view" className="list-view-image"></img></span>
                         </section>
                         <section className="display-all-content-types">
@@ -231,12 +231,12 @@ class MainSection extends Component {
                             </div>
                         </div>
                         <section className="pagination-wrapper">
-                            <span className="pagination-arrow left-arrow-one"><img src={leftArrowOne} alt="left-arrow-one" className="pagination-icon"></img></span>
+                            <span className="pagination-arrow left-arrow-one"><img src={leftArrowOne} alt="left-arrow-one" className="extreme-icons"></img></span>
                             <span className="pagination-arrow left-arrow-two" ><img src={leftArrowTwo} alt="left-arrow-two" className="pagination-icon"></img></span>
                             <span className="pagination-arrow">Page 1</span>
-                            <span className="pagination-arrow down-arrow"><img src={rightArrowOne} alt="dropdown-arrow" className="pagination-icon"></img></span>
+                            <span className="pagination-arrow down-arrow"><img src={rightArrowOne} alt="dropdown-arrow" className="pagination-icon ml-3"></img></span>
                             <span className="pagination-arrow right-arrow-one"><img src={rightArrowTwo} alt="right-arrow-one" className="pagination-icon"></img></span>
-                            <span className="pagination-arrow right-arrow-two"><img src={downArrow} alt="right-arrow-two" className="pagination-icon"></img></span>
+                            <span className="pagination-arrow right-arrow-two"><img src={downArrow} alt="right-arrow-two" className="extreme-icons"></img></span>
                             
                             
                            
