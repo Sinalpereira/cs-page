@@ -4,13 +4,18 @@ import smallSearch from '../Task File Icons/entry_search_small.svg';
 import dropdown from '../Task File Icons/grey_drop_down.svg';
 import cascade from '../Task File Icons/cascade.svg';
 import listView from '../Task File Icons/ct_list_view.svg';
+import modifiedDropdown from '../Task File Icons/modified_entry_dropdown.svg';
 import languageDropDown from '../Task File Icons/language_dropdown.svg';
 import plusMore from '../Task File Icons/plus.svg';
-import leftArrowOne from '../Task File Icons/pagination_1.svg';
-import leftArrowTwo from '../Task File Icons/pagination_2.svg';
+import pagination1 from '../Task File Icons/pagination_1.svg';
 import rightArrowOne from '../Task File Icons/pagination_3.svg';
-import rightArrowTwo from '../Task File Icons/pagination_4.svg';
 import downArrow from '../Task File Icons/pagination_5.svg';
+// import pagination1 from '../Task File Icons/Vector1.svg';
+import leftArrowTwo from '../Task File Icons/Vector2.svg';
+import pagination3 from '../Task File Icons/Vector3.svg';
+import rightArrowTwo from '../Task File Icons/Vector4.svg';
+import pagination5 from '../Task File Icons/Vector5.svg';
+
 
 
 
@@ -76,24 +81,24 @@ class MainSection extends Component {
                         <div className="top-header-wrapper">
                             <div className="top-header">
                                 <div className="left-option">
-                                <div className="filters">
-                                    <a className="filter-link">Filters</a></div>
-                                <div className="publish-status-wrapper">
-                                    <a className="ps-link">Publish status</a>
-                                    <span><img src={dropdown} alt="dropdown" class="dropdown-list"></img></span></div>
-                                <div className="tags">
-                                    <a className="tag-link">Tags</a>
-                                    <span class="dropdown-for-tags"><img src={dropdown} alt="dropdown" class="dropdown-list"></img></span></div>
-                                <div className="more-options">
-                                    <span><img src={plusMore} className="plus-more-image"></img></span>
-                                    <a className="more-features">More</a>
+                                    <div className="filters">
+                                        <a className="filter-link">Filters</a></div>
+                                    <div className="publish-status-wrapper">
+                                        <a className="ps-link">Publish status</a>
+                                        <span><img src={dropdown} alt="dropdown" class="dropdown-list"></img></span></div>
+                                    <div className="tags">
+                                        <a className="tag-link">Tags</a>
+                                        <span class="dropdown-for-tags"><img src={dropdown} alt="dropdown" class="dropdown-list"></img></span></div>
+                                    <div className="more-options">
+                                        <span><img src={plusMore} className="plus-more-image"></img></span>
+                                        <a className="more-features">More</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="right-total-entries">
-                                <div className="show-entries">
-                                    <p className="total-entries">Showing 1-7 of 32 entries</p></div>
-                            </div></div>
-                            
+                                <div className="right-total-entries">
+                                    <div className="show-entries">
+                                        <p className="total-entries">Showing 1-7 of 32 entries</p></div>
+                                </div></div>
+
                         </div>
                         <div className="entry-wrapper">
                             <div className="show-ct">
@@ -104,7 +109,7 @@ class MainSection extends Component {
                                         <div className="row-title row-common w-20 ml-20 font-12 padding-14">Content type</div>
                                         <div className="row-title row-common font-12 w-20 padding-14">Modified by
                                         <span className="modified-by-dropdown font-12">
-                                                <img src={dropdown} alt="drop-down" className="modified-by"></img>
+                                                <img src={modifiedDropdown} alt="drop-down" className="modified-by"></img>
                                             </span>
                                         </div>
                                         <div className="row-title row-common font-12 w-20 padding-14">Publish status</div>
@@ -187,7 +192,7 @@ class MainSection extends Component {
                                             <p className="row-description ">Dec 25 2018,02;30 PM</p>
                                         </div>
                                         <div className="row-title w-20">
-                                        <p className="publish-status">Not Published</p>
+                                            <p className="publish-status">Not Published</p>
                                             {/* <ul >
                                                 <li className="publish-status">
                                                     Not Published
@@ -204,7 +209,7 @@ class MainSection extends Component {
                                             <p className="row-description ">Dec 25 2018,02;30 PM</p>
                                         </div>
                                         <div className="row-title w-20">
-                                        <p className="publish-status">Not Published</p>
+                                            <p className="publish-status">Not Published</p>
                                             {/* <ul >
                                                 <li className="publish-status">
                                                     Not Published
@@ -231,21 +236,18 @@ class MainSection extends Component {
                             </div>
                         </div>
                         <section className="pagination-wrapper">
-                            <span className="pagination-arrow left-arrow-one"><img src={leftArrowOne} alt="left-arrow-one" className="extreme-icons"></img></span>
+                            <span className="pagination-arrow left-arrow-one"><img src={pagination1} alt="left-arrow-one" className="extreme-icons"></img></span>
                             <span className="pagination-arrow left-arrow-two" ><img src={leftArrowTwo} alt="left-arrow-two" className="pagination-icon"></img></span>
                             <span className="pagination-arrow">Page 1</span>
-                            <span className="pagination-arrow down-arrow"><img src={rightArrowOne} alt="dropdown-arrow" className="pagination-icon ml-3"></img></span>
+                            <span className="pagination-arrow down-arrow"><img src={pagination3} alt="dropdown-arrow" className="pagination-icon ml-3"></img></span>
                             <span className="pagination-arrow right-arrow-one"><img src={rightArrowTwo} alt="right-arrow-one" className="pagination-icon"></img></span>
                             <span className="pagination-arrow right-arrow-two"><img src={downArrow} alt="right-arrow-two" className="extreme-icons"></img></span>
-                            
-                            
-                           
                         </section>
+                       
 
 
                     </div>
                 </div>
-
             </React.Fragment>
         );
     }

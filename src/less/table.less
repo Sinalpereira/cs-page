@@ -25,14 +25,16 @@
 
             .search-entries {
                 display    : inline-block;
-                margin-left: 64px;
-                width      : 450px;
                 height     : 33px;
+                margin-left: 64px;
+                margin-top : 2px;
+                width      : 450px;
+
 
                 @media (min-width: 992px) and (max-width: 1196px) {
                     // width   : 330px;
                     margin-left: 9px;
-                    width: 81%;
+                    width      : 81%;
                 }
 
                 span {
@@ -149,7 +151,7 @@
         height      : 10%;
         margin-left : 29px;
         margin-right: 27px;
-        //margin-top: -4px;
+        margin-top  : -2px;
         border-top  : 1px solid#ECEDEF;
 
         .top-header {
@@ -226,8 +228,9 @@
 
 
                     .plus-more-image {
-                        height: 7px;
-                        width : 7px;
+                        height    : 7px;
+                        margin-top: 3px;
+                        width     : 7px;
                     }
 
                     .more-features {
@@ -313,13 +316,21 @@
                     }
 
                     .modified-by-dropdown {
-                        position: absolute;
-                        bottom  : 25%;
-                        right   : 42%;
+                        // position: absolute;
+                        // bottom  : 25%;
+                        // right   : 42%;
 
                         .modified-by {
-                            height: 5px;
-                            width : 8px;
+                            height  : 5px;
+                            width   : 8px;
+                            float   : right;
+                            position: absolute;
+                            bottom  : 35%;
+                            right   : 41%;
+                            @media screen and (min-width:992px) and (max-width:1365px){
+                            position: absolute;
+                            right   : 18%;
+                        }
                         }
                     }
 
@@ -382,7 +393,6 @@
                 }
 
                 .w-30 {
-                    // width: 30%;
                     width   : 31%;
                 }
 
@@ -400,13 +410,13 @@
             }
 
             .row:last-child {
-                border-bottom: none;
+                border-bottom: 0;
                 border-radius: 0px 0px 5px 5px;
             }
 
             .row-heading {
                 background-color: @background-color-grey;
-                border-bottom   : none;
+                border-bottom   : 0;
                 color           : @font-color-grey;
                 height          : 38px;
                 text-transform  : capitalize;

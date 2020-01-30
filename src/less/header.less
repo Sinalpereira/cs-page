@@ -2,7 +2,6 @@ header {
   background-color: @color-white;
   height          : @height-60-px;
 
-
   .contentstack-logo-wrapper-div {
     display    : inline-block;
     height     : @height-30-px+5;
@@ -30,6 +29,7 @@ header {
       margin-left: 5px;
 
       .dropdown-list {
+        color   : @color-black;
         height  : @height-4-px+1;
         position: relative;
         left    : 8%;
@@ -45,23 +45,24 @@ header {
     top     : -4%;
 
     .nav-list {
-      width:100%;
+      width: 100%;
+
       .list-name {
-        display    : inline;
-       
-        .nav-link{
-          color:    @font-color-black;
-          cursor     : pointer;
-          font-size  : @font14;
-          line-height: @line-height-16;
-          padding    : 0 @padding-40+8 0 0;
-          
+        display: inline;
+
+        .nav-link {
+          color       : @font-color-black;
+          cursor      : pointer;
+          font-size   : @font14;
+          line-height : @line-height-16;
+          margin-right: 49px;
         }
 
         .entry-link {
-          color      : @color-purple;
-          font-weight: @semibold;
-        
+          border-bottom : 2px solid #533DC0;
+          color         : @color-purple;
+          font-weight   : @semibold;
+          padding-bottom: 22px;
 
           &:hover {}
         }
@@ -70,13 +71,14 @@ header {
   }
 
   .header-right-images {
-    float      : right;
-    padding-top: @padding-20+2;
+    float        : right;
+    padding-top  : @padding-20+2;
     padding-right: @padding-9;
 
     .to-do-task {
-      position: relative;
-      right   : 152%;
+      margin-top: -2px;
+      position  : relative;
+      right     : 152%;
     }
 
     .question-mark {
@@ -90,11 +92,11 @@ header {
     }
 
     .dropdown-icon {
-      height  : 5px;
+      height    : 5px;
       margin-top: -2px;
-      position: relative;
-      right   : 30%;
-      width   : 8px;
+      position  : relative;
+      right     : 30%;
+      width     : 8px;
     }
   }
 }

@@ -458,3 +458,9 @@
       name: '[name]-[query].[ext]'
     }
   })
+
+  //////////////////////////////////////////////////////////////////////
+
+  css hacks safari 
+
+  @media screen and (-webkit-min-device-pixel-ratio:0) {body {background-color: #FF6500;}}
