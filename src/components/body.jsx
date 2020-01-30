@@ -243,9 +243,6 @@ class MainSection extends Component {
                             <span className="pagination-arrow right-arrow-one"><img src={rightArrowTwo} alt="right-arrow-one" className="pagination-icon"></img></span>
                             <span className="pagination-arrow right-arrow-two"><img src={downArrow} alt="right-arrow-two" className="extreme-icons"></img></span>
                         </section>
-                       
-
-
                     </div>
                 </div>
             </React.Fragment>
