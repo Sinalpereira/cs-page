@@ -4,7 +4,7 @@ import smallSearch from '../Task File Icons/entry_search_small.svg';
 import dropdown from '../Task File Icons/grey_drop_down.svg';
 import cascade from '../Task File Icons/cascade.svg';
 import listView from '../Task File Icons/ct_list_view.svg';
-import modifiedDropdown from '../Task File Icons/modified_entry_dropdown.svg';
+import modifiedDropdown from '../Task File Icons/modified_entry_dropdown1.svg';
 import languageDropDown from '../Task File Icons/language_dropdown.svg';
 import plusMore from '../Task File Icons/plus.svg';
 import pagination1 from '../Task File Icons/pagination_1.svg';
